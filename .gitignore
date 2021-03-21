@@ -1,0 +1,7 @@
+node_modules
+.settings
+.sign
+certFile.p12
+certFile.pwd
+src/js/bundle.js
+glucose.wgt

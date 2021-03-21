@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=360, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Glucose Graph</title>
+
+		<link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+	<main>
+		<div id="page-graph" class="page">
+			<svg id="graph" viewBox="0 0 360 360">
+				<path id="line" fill="none" stroke="blue" stroke-width="3" />
+			</svg>
+			<button id="to-settings">Settings</button>
+		</div>
+		<div id="page-settings" class="page" style="display: none;">
+			<h2>LibreView Login</h2>
+			<div id="logged-in" style="display: none;">
+				You are logged in
+				<button id="to-graph">Graph</button>
+			</div>
+			<div id="login-error"></div>
+			<div class="login-form">
+				<div>
+					<label for="email">E-Mail</label>
+					<input type="email" id="email" placeholder="Enter E-Mail">
+				</div>
+				<div>
+					<label for="password">Password</label>
+					<input type="password" id="password" placeholder="Enter Password">
+				</div>
+				<button id="login">Login</button>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<script src="js/bundle.js"></script>
+	</footer>
+</body>
+</html>

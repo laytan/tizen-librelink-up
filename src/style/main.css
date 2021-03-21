@@ -1,0 +1,36 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 360px;
+  height: 360px;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+button {
+  background-color: lightskyblue;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+#graph {
+  width: 360px;
+  height: 360px;
+  position: relative;
+  transform: rotate(-90deg);
+}

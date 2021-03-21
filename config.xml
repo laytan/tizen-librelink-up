@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://laytanlaats.com/glucose" version="1.0.0" viewmodes="maximized">
+    <access origin="https://libreview.io" subdomains="true"/>
+    <tizen:app-widget id="9OEN2bGm5B.glucose.glucose" primary="true">
+        <tizen:widget-label>Glucose Graph</tizen:widget-label>
+        <tizen:widget-content src="src/widgets/glucosegraph/index.html">
+            <tizen:widget-size preview="src/widgets/glucosegraph/images/preview.png">2x2</tizen:widget-size>
+        </tizen:widget-content>
+    </tizen:app-widget>
+    <tizen:application id="9OEN2bGm5B.glucose" package="9OEN2bGm5B" required_version="4.0"/>
+    <author href="https://laytanlaats.com/" email="laytanlaats@hotmail.com">Laytan Laats</author>
+    <content src="src/index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal"/>
+    <feature name="http://tizen.org/feature/network.internet"/>
+    <feature name="http://tizen.org/feature/network.wifi"/>
+    <feature name="http://tizen.org/feature/web.service"/>
+    <icon src="src/assets/images/icon.png"/>
+    <name>Glucose Graph</name>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:profile name="wearable"/>
+</widget>

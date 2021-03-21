@@ -1,0 +1,51 @@
+body {
+  width: 360px;
+  height: 360px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+
+*, *::before, *::after {
+  font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.box__sugar {
+  font-size: 40px;
+  height: 70px;
+  line-height: 70px;
+  color: #e60000;
+}
+
+.box__name {
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.box__icon {
+  height: 50px;
+  width: 50px;
+  padding: 12.5px;
+  line-height: 50px;
+}
+
+.top-row, .middle-row, .bottom-row {
+  text-align: center;
+}
+
+.middle-row__left {
+  margin-right: 50px;
+}
+
+.middle-row__right {
+  margin-left: 50px;
+}
