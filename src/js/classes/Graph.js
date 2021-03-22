@@ -7,7 +7,7 @@ export default class Graph {
   /**
    * Multiplies the amount of radius offset for more movement
    */
-  movementMultiplier = 10;
+  movementMultiplier = 15;
 
   /**
    * What radius to anchor the line and start offset calculations
@@ -45,6 +45,7 @@ export default class Graph {
       <path
         fill="none"
         stroke="${color}"
+        stroke-width="3"
         id="${id}"
         d="
         M 180 180
@@ -109,9 +110,9 @@ export default class Graph {
     // What radius a point will be at with the specified value
     const valueToRadius = (v) => this.baseLineRadius + ((v - this.baseLineValue) * this.movementMultiplier);
 
-    this.showCircle(this.baseLineRadius, 'baseline', 'white', this.baseLineValue);
-    this.showCircle(valueToRadius(maxValue), 'max', 'white', maxValue);
-    this.showCircle(valueToRadius(minValue), 'min', 'white', minValue);
+    this.showCircle(this.baseLineRadius, 'baseline', '#aaa', this.baseLineValue);
+    this.showCircle(valueToRadius(maxValue), 'max', '#aaa', maxValue);
+    this.showCircle(valueToRadius(minValue), 'min', '#aaa', minValue);
 
     let currPoint = 0;
     const linePoints = [];
@@ -140,8 +141,8 @@ export default class Graph {
     }, 'M');
 
     this.svgEl.innerHTML += /*html*/`
-      <path id="line" fill="none" stroke="blue" stroke-width="3" d="${pointsAttr}"></path>
+      <path id="line" fill="none" stroke="#FF5349" stroke-width="3" d="${pointsAttr}"></path>
     `;
-    this.showText('white', 'line', name, '15%');
+    this.showText('#eee', 'line', name, '10%');
   }
 }
